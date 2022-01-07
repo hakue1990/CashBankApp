@@ -34,10 +34,20 @@
         </div>
     </div>
 
+        @if (Route::has('login'))
             <div class="nav-item-welcome-auth">
-            <a href="{{ route('login') }}" class="nav-item-welcome-login">{{__('syslang.Login')}}</a>
-            <a href="{{ route('register') }}" class="nav-item-welcome- register" >{{ __('syslang.Register') }}</a>
+                @auth
+                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">{{__('syslang.Dashboard')}}</a>
+                @else
+                    <a href="{{ route('login') }}" class="nav-item-welcome-login">{{__('syslang.Login')}}</a>
+
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="nav-item-welcome- register" >{{ __('syslang.Register') }}</a>
+                    @endif
+                @endauth
             </div>
+        @endif
+
     </div>
     </body>
     <script type="text/javascript">
@@ -47,6 +57,8 @@
         $(".changeLang").change(function(){
             window.location.href = url + "?lang="+ $(this).val();
         });
+
+        console.log('skrypt języka');
 
     </script>
 </html>
