@@ -7,7 +7,9 @@
             <div class="dashboard-account-left">
                 <h2 id="account-type"></h2>
                 <h3 id="account-number"></h3> <!-- {{ $accounts[0]['account_number']}} -->
-
+                <h2 id="account-intrests">""</h2>
+                <h2 id="account-amount-of-installment">""</h2>
+                <h2 id="account-number-of-installment">""</h2>
             </div>
             <div class="dashboard-account-right">
                 <h3>Dostępne środki:</h3>
@@ -55,6 +57,9 @@
         const accountBalance = document.getElementById('account-balance');
         const nextButton = document.getElementById('account-next');
         const previousButton = document.getElementById('account-previous');
+        const accountintrests = document.getElementById('account-intrests');
+        const accountAmountOfInstallment = document.getElementById('account-amount-of-installment');
+        const accountNumberOfInstallment = document.getElementById('account-number-of-installment');
 
         //Get PHP variables
         const transactions = {!! json_encode($transactions, JSON_HEX_TAG) !!};
@@ -101,8 +106,39 @@
 
         const currentAccounts = (counter) => {
             accountNumber.textContent = acconuts[counter]['account_number'];
-            accountType.textContent = acconuts[counter]['type'];
+            // accountType.textContent = acconuts[counter]['type'];
             accountBalance.textContent = acconuts[counter]['balance'] + " PLN";
+            const x = () => {
+                if(acconuts[counter]['type'] == "savings account") {
+                    return {!! json_encode( __('syslang.Savings account'), JSON_HEX_TAG) !!};
+                }
+                if(acconuts[counter]['type'] == "credit account") {
+                    return {!! json_encode( __('syslang.Credit account'), JSON_HEX_TAG) !!};
+                }
+                if(acconuts[counter]['type'] == "regular account") {
+                    return {!! json_encode( __('syslang.Regular account'), JSON_HEX_TAG) !!};
+                }
+            }
+            accountType.textContent = x();
+
+            if(acconuts[counter]['interest'] !== null) {
+                accountintrests.textContent = "Oprocentowanie: " + acconuts[counter]['interest'];
+            } else {
+                accountintrests.textContent = "";
+            }
+
+            if(acconuts[counter]['amount_of_installment'] !== null) {
+                accountAmountOfInstallment.textContent = "Kwota następnej raty: " + acconuts[counter]['amount_of_installment'];
+            } else {
+                accountAmountOfInstallment.textContent = "";
+            }
+
+            if(acconuts[counter]['number_of_installment'] !== null) {
+                accountNumberOfInstallment.textContent = "Ilość rat do spłaty: " + (Math.floor(acconuts[counter]['number_of_installment']) +1 );
+            } else {
+                accountNumberOfInstallment.textContent = "";
+            }
+
         }
 
         const currentDate = (date)=> {
