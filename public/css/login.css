@@ -1,0 +1,130 @@
+.navbar-collapse {
+    background-color: black;
+    display: flex;
+    min-height: 8vh;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+
+.login--register {
+    list-style-type: none;
+    color: white;
+}
+.login--register a {
+    color: white;
+    text-decoration: none;
+}
+form h2 {
+    color: #044b7f;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form-login {
+    min-height: 400px;
+    width: 500px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 40px;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.form-contact {
+    padding-bottom: 4rem;
+}
+.form--box {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+}
+.form--box input {
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    position: absolute;
+    background: none;
+}
+
+.form--box label {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 3px solid #595f6e;
+}
+
+.form--box label::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    border-bottom: 3px solid #044b7f;
+    transform: scale(0);
+}
+
+.form--box .content-name {
+    position: absolute;
+    bottom: 6px;
+    transition: all 0.4s ease;
+}
+.form--box input:focus + .label-name .content-name,
+.form--box input:valid + .label-name .content-name {
+    font-size: 14px;
+    color: #044b7f;
+    transform: translateY(-150%);
+}
+.form--text {
+    min-height: 200px;
+}
+.form--text input:focus + .label-name .content-name,
+.form--text input:valid + .label-name .content-name {
+    transform: translateY(-650%);
+}
+.form--box input:focus + .label-name::before,
+.form--box input:valid + .label-name::before {
+    transform: scale(1);
+}
+
+.form--button {
+    align-self: center;
+    background: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    background-color: #044b7f;
+    color: white;
+    border: none;
+    margin: 20px;
+}
+.form--button:hover {
+    cursor: pointer;
+}
+
+.register-form {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #fff;
+    width: 550px;
+}
+
+.register-form div {
+    margin: 25px;
+}
