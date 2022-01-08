@@ -26,6 +26,7 @@
     margin: 0 2vw 0 2vw;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .nav-item-welcome-auth {

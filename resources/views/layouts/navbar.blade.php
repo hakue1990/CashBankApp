@@ -29,7 +29,7 @@
 <nav>
 
     @guest
-        <div class="logo">
+        <div class="logo" onclick="location.href='/';">
             <img src="./assets/logo.png" alt="">
         </div>
         <div class="login--register">
@@ -48,7 +48,7 @@
     @else
     <!-- Authentication Links -->
 
-        <div class="logo"><img src="/assets/logo.png" alt=""></div>
+        <div class="logo" onclick="location.href='/dashboard';"><img src="/assets/logo.png" alt=""></div>
         <ul class="nav-links">
             <li><a href="/offert">{{ __('syslang.Offers') }}</a></li>
             <!-- <li><a href="/credits">Kredyty</a></li> -->

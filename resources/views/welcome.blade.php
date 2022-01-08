@@ -11,16 +11,17 @@
         <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
-    <div class="nav-item-welcome">
-            <div class="nav-item-welcome-menu">
-             <h1 class="nav-item-welcome-menu-h1">CashBank</h1>
-             <ul class="nav-item-welcome-menu-links">
-                  <li><a href="/offert">Oferty</a></li>
-                  <li><a href="/credits">Kredyty</a></li>
-                  <li><a href="/loans">Pożyczki</a></li>
-                  <li><a>Kontakt</a></li>
-             </ul>
-            </div>
+
+<nav>
+        <div class="logo" onclick="location.href='/';"> 
+        <img src="/assets/logo.png" alt=""></div>
+        <ul class="nav-links">
+        <li><a href="/offert">{{ __('syslang.Offers') }}</a></li>
+            <li><a href="/loans">{{ __('syslang.Loans') }}</a></li>
+            <li><a href="/contact">{{ __('syslang.Contact') }}</a></li>
+        </ul>
+
+
      <div class="language">
         <div class="col-md-2 col-md-offset-6 text-right">
             <strong class="language-text">Select Language: </strong>
@@ -38,6 +39,11 @@
             <div class="nav-item-welcome-auth">
                 @auth
                     <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">{{__('syslang.Dashboard')}}</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                            {{ __('syslang.Logout') }}
+                        </a>
                 @else
                     <a href="{{ route('login') }}" class="nav-item-welcome-login">{{__('syslang.Login')}}</a>
 
@@ -48,7 +54,7 @@
             </div>
         @endif
 
-    </div>
+</nav>
     </body>
     <script type="text/javascript">
 

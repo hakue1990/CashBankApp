@@ -21,7 +21,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 3rem;
-    /* border: 2px solid black; */
 }
 .nav-links {
     list-style-type: none;

@@ -27,7 +27,7 @@
     <nav>
 
 @guest
-       <div class="logo">
+       <div class="logo" onclick="location.href='/';">
            <img src="./assets/logo.png" alt="">
        </div>
          <div class="login--register">
@@ -46,15 +46,15 @@
 @else
 <!-- Authentication Links -->
 
-<div class="logo"><img src="/assets/logo.png" alt=""></div>
+        <div class="logo" onclick="location.href='/';"> 
+        <img src="/assets/logo.png" alt=""></div>
         <ul class="nav-links">
-        <li><a href="/offert">Oferty</a></li>
-        <!-- <li><a href="/credits">Kredyty</a></li> -->
-        <li><a href="/loans">Pożyczki</a></li>
-        <li><a href="/contact">Kontakt</a></li>
+        <li><a href="/offert">{{ __('syslang.Offers') }}</a></li>
+            <li><a href="/loans">{{ __('syslang.Loans') }}</a></li>
+            <li><a href="/contact">{{ __('syslang.Contact') }}</a></li>
         </ul>
 
-    <!-- <div class="language">
+    <div class="language">
         <div class="col-md-2 col-md-offset-6 text-right">
             <strong class="language-text">Select Language: </strong>
         </div>
@@ -65,7 +65,7 @@
                 <option value="pl" {{ session()->get('locale') == 'pl' ? 'selected' : '' }}>Polski</option>
             </select>
         </div>
-     </div> -->
+     </div>
 
     <div class="nav-item-logged-userInfo">
         <div class="nav--user-ico">
