@@ -2,7 +2,7 @@
 
 @section('content')
     
-
+           
                     <form method="POST" action="{{ route('login') }}" class='form-login'>
                         <h2>CashBank Logowanie</h2>
                         @csrf
