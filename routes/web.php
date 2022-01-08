@@ -25,8 +25,8 @@ Route::resource('transactions', \App\Http\Controllers\TransactionController::cla
  */
 
 
-Auth::routes();
-//Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true]);
+
 
 Route::view('/offert', 'offert');
 Route::view('/credits', 'credits');
@@ -37,6 +37,6 @@ Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index'])->name
 Route::view('/phone','top-up_phone')->name('phone');
 Route::get('/change', [\App\Http\Controllers\WelcomeController::class, 'change'])->name('changeLang');
 
-Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'getDashboard'])->name('dashboard');
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'getDashboard'])->name('dashboard')->middleware(["verified"]);
 
 Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout']);
