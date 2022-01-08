@@ -13,7 +13,7 @@
     <body class="antialiased">
 
 <nav>
-        <div class="logo" onclick="location.href='/';"> 
+        <div class="logo" onclick="location.href='/';">
         <img src="/assets/logo.png" alt=""></div>
         <ul class="nav-links">
         <li><a href="/offert">{{ __('syslang.Offers') }}</a></li>
@@ -44,6 +44,9 @@
                                         document.getElementById('logout-form').submit();">
                             {{ __('syslang.Logout') }}
                         </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 @else
                     <a href="{{ route('login') }}" class="nav-item-welcome-login">{{__('syslang.Login')}}</a>
 
@@ -55,7 +58,7 @@
         @endif
 
 </nav>
-<section class="welcome-section"> 
+<section class="welcome-section">
     <h1>{{ __('syslang.Welcome-h1') }}</h1>
     <p>{{ __('syslang.Welcome-p') }}</p>
     <article>
