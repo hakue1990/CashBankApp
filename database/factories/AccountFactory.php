@@ -49,7 +49,6 @@ class AccountFactory extends Factory
             'account_number' => $this->faker->iban('','',26),
             'type' => $this->accountType,
             'balance' => $this->balance,
-            //TODO Zrobić osobną tabeele i model dla kredytów i kąt oszczędnościowych i tam przenieść oprocentowanie, ratę kredytu itp, ale na froncie będąmieli trudniej
             'interest' => $this->interest,
             'amount_of_installment' => $this->amount_of_installment,
             'number_of_installment' => $this->number_of_installment,

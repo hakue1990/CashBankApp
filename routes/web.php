@@ -26,6 +26,7 @@ Route::resource('transactions', \App\Http\Controllers\TransactionController::cla
 
 
 Auth::routes();
+//Auth::routes(['verify' => true]);
 
 Route::view('/offert', 'offert');
 Route::view('/credits', 'credits');
