@@ -7,33 +7,35 @@
             <div class="dashboard-account-left">
                 <h2 id="account-type"></h2>
                 <h3 id="account-number"></h3> <!-- {{ $accounts[0]['account_number']}} -->
-                <h2 id="account-intrests">""</h2>
-                <h2 id="account-amount-of-installment">""</h2>
-                <h2 id="account-number-of-installment">""</h2>
+            </div>
+            <div class="dashboard-account-middle">
+                <p id="account-intrests"></p>
+                <p id="account-amount-of-installment"></p>
+                <p id="account-number-of-installment"></p>
             </div>
             <div class="dashboard-account-right">
-                <h3>Dostępne środki:</h3>
+                <h3>{{ __('syslang.dashboard-available-funds') }}</h3>
                 <h2 id="account-balance"></h2>  <!-- {{ $accounts[0]['balance'] }} PLN -->
             </div>
         </div>
 
         <div class="dashboard-buttons">
             <div class="dashboard-buttons-transactions">
-                <a href="transactions"><button class="dashboard-btn">Nowy przelew</button></a>
-                <a href="/phone"><button class="dashboard-btn">Zasil konto</button></a>
+                <a href="transactions"><button class="dashboard-btn">{{ __('syslang.dashboard-newTransaction') }}</button></a>
+                <a href="/phone"><button class="dashboard-btn">{{ __('syslang.dashboard-fundyouraccount') }}</button></a>
             </div>
 
             <div class="dashboard-buttons-accountSwitcher">
-                <button id="account-previous" class="dashboard-btn switcher-btn">Previous</button>
-                <button id="account-next" class="dashboard-btn switcher-btn">Next</button>
+                <button id="account-previous" class="dashboard-btn switcher-btn">{{ __('syslang.dashboard-btn-previous') }}</button>
+                <button id="account-next" class="dashboard-btn switcher-btn">{{ __('syslang.dashboard-btn-next') }}</button>
             </div>
         </div>
         <div class="dashboard-history-container" id="dashboard-history-container">
             <div class="dashboard-history-header">
-                <h5 class="dashboard-history-header-h">Historia transakcji</h5>
-                <h5 class="dashboard-history-header-h">Tytuł</h5>
-                <h5 class="dashboard-history-header-h">KATEGORIA</h5>
-                <h5 class="dashboard-history-header-h">KWOTA</h5>
+                <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-historytransactions') }}</h5>
+                <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-title') }}</h5>
+                <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-category') }}</h5>
+                <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-amount') }}</h5>
             </div>
             @if ($message = Session::get('success'))
                 <h2 style="color: green" class="dashboard-history-message" id="dashboard-history-message">{{ $message }}</h2>
@@ -122,19 +124,19 @@
             accountType.textContent = x();
 
             if(acconuts[counter]['interest'] !== null) {
-                accountintrests.textContent = "Oprocentowanie: " + acconuts[counter]['interest'];
+                accountintrests.textContent = {!! json_encode( __('syslang.dashboard-interest'), JSON_HEX_TAG) !!} + acconuts[counter]['interest'];
             } else {
                 accountintrests.textContent = "";
             }
 
             if(acconuts[counter]['amount_of_installment'] !== null) {
-                accountAmountOfInstallment.textContent = "Kwota następnej raty: " + acconuts[counter]['amount_of_installment'];
+                accountAmountOfInstallment.textContent = {!! json_encode( __('syslang.dashboard-amountofinstallment'), JSON_HEX_TAG) !!} + acconuts[counter]['amount_of_installment'];
             } else {
                 accountAmountOfInstallment.textContent = "";
             }
 
             if(acconuts[counter]['number_of_installment'] !== null) {
-                accountNumberOfInstallment.textContent = "Ilość rat do spłaty: " + (Math.floor(acconuts[counter]['number_of_installment']) +1 );
+                accountNumberOfInstallment.textContent = {!! json_encode( __('syslang.dashboard-numberofinstallment'), JSON_HEX_TAG) !!} + (Math.floor(acconuts[counter]['number_of_installment']) +1 );
             } else {
                 accountNumberOfInstallment.textContent = "";
             }

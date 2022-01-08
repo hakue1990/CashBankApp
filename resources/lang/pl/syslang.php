@@ -25,5 +25,21 @@ return [
     'Savings account' => 'Konto oszczędnościowe',
     'Credit account' => 'Kredyt',
     'Regular account' => 'Konto podstawowe',
+    'Welcome-h1' => 'Witaj na stronie Cash Bank !!!',
+    'Welcome-p' => 'Jesteśmy bankiem oferującym najlepsze lokaty na rynku, nawet 100% w skali roku !!!',
+    'Welcome-h3' => 'Zmieniamy życie na lepsze',
+    'dashboard-available-funds' => "Dostępne środki:",
+    'dashboard-newTransaction' => "Nowy przelew",
+    'dashboard-fundyouraccount' => "Zasil konto",
+    'dashboard-btn-previous' => "Poprzednie",
+    'dashboard-btn-next' => "Następne",
+    'dashboard-historytransactions' => "Historia transakcji",
+    'dashboard-history-title' => "Tytuł",
+    'dashboard-history-category' => "KATEGORIA",
+    'dashboard-history-amount' => "KWOTA",
+    'dashboard-interest' => 'Oprocentowanie: ',
+    'dashboard-amountofinstallment' => 'Kwota następnej raty: ',
+    'dashboard-numberofinstallment' => 'Ilość rat do spłaty: ',
+
 ];
 ?>

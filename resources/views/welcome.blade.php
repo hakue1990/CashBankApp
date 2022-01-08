@@ -55,6 +55,17 @@
         @endif
 
 </nav>
+<section class="welcome-section"> 
+    <h1>{{ __('syslang.Welcome-h1') }}</h1>
+    <p>{{ __('syslang.Welcome-p') }}</p>
+    <article>
+        <h3>{{ __('syslang.Welcome-h3') }}</h3>
+        <img src="/assets/img/givingmoney.jpg" alt="">
+    </article>
+
+</section>
+
+
     </body>
     <script type="text/javascript">
 

@@ -25,6 +25,20 @@ return [
     'Savings account' => 'savings account',
     'Credit account' => 'credit account',
     'Regular account' => 'regular account',
-
+    'Welcome-h1' => 'Welcome to the website of Cash Bank !!!',
+    'Welcome-p' => 'We are a bank offering the best deposits on the market, even 100% per annum !!!',
+    'Welcome-h3' => 'We change life for the better',
+    'dashboard-available-funds' => "Available funds:",
+    'dashboard-newTransaction' => "New transaction",
+    'dashboard-fundyouraccount' => "Fund your account",
+    'dashboard-btn-previous' => "Previous",
+    'dashboard-btn-next' => "Next",
+    'dashboard-historytransactions' => "Transaction history",
+    'dashboard-history-title' => "Title",
+    'dashboard-history-category' => "Category",
+    'dashboard-history-amount' => "Amount",
+    'dashboard-interest' => 'Interest: ',
+    'dashboard-amountofinstallment' => 'The amount of the next installment: ',
+    'dashboard-numberofinstallment' => 'Number of installments to be repaid: ',
 ];
 ?>
