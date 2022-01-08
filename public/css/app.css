@@ -36,9 +36,14 @@ nav {
 .nav-links a {
     color: white;
     text-decoration: none;
+    display: block;
+    height: 8vh;
+    line-height: 8vh;
 }
 .nav-links a:hover {
     font-weight: bold;
+    color: #ffaf14;
+    /* background-color: red; */
 }
 .nav-item-logged-userInfo a {
     color: black;

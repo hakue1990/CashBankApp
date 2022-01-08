@@ -77,7 +77,7 @@
         action="{{ route('login') }}"
         class="form-login form-contact"
       >
-        <h2>Napisz do nas</h2>
+        <h2>{{ __('syslang.Contact us') }}</h2>
         <div class="form--box">
           <input
             id="subject"
@@ -87,7 +87,7 @@
             required
           />
           <label for="subject" class="label-name">
-            <span class="content-name"> subject </span>
+            <span class="content-name"> {{ __('syslang.subject') }}</span>
           </label>
         </div>
         <div class="form--box">
@@ -99,7 +99,7 @@
             required
           />
           <label for="name" class="label-name">
-            <span class="content-name"> name </span>
+            <span class="content-name">{{ __('syslang.name') }}</span>
           </label>
         </div>
         <div class="form--box">
@@ -111,7 +111,7 @@
             required
           />
           <label for="email" class="label-name">
-            <span class="content-name"> email </span>
+            <span class="content-name">email</span>
           </label>
         </div>
 
@@ -124,7 +124,7 @@
             required
           />
           <label for="text" class="label-name label-text">
-            <span class="content-name"> text </span>
+            <span class="content-name">{{ __('syslang.text') }}</span>
           </label>
         </div>
       </form>

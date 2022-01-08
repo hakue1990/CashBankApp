@@ -70,6 +70,12 @@ return [
     'Even up to PLN 500,000, an ID card is enough!' => 'Even up to PLN 500,000, an ID card is enough!',
     'Do you know this nightmare: the need to prepare an employment document, income certificate, ID card, second identity document, other documents required by banks? Stop! We do not have it! CashBank are installment loans as proof. You borrow money: fast, easy and stress-free. We respect your time! Taking out a loan has never been so easy. At Aasa, you only need an ID card to undergo the verification process. Our motto is minimum formalities and maximum customer satisfaction. We perfectly know how valuable your time is, which is why we respect it.' => 'Do you know this nightmare: the need to prepare an employment document, income certificate, ID card, second identity document, other documents required by banks? Stop! We do not have it! CashBank are installment loans as proof. You borrow money: fast, easy and stress-free. We respect your time! Taking out a loan has never been so easy. At Aasa, you only need an ID card to undergo the verification process. Our motto is minimum formalities and maximum customer satisfaction. We perfectly know how valuable your time is, which is why we respect it.',
     'Call now! 876 582 391' => 'Call now! 876 582 391',
+    'Contact us' => 'Contact us',
+    'subject' => 'subject',
+    'name' => 'name',
+    'text' => 'text',
+    'select language' => 'select language'
+
 
 
 ];
