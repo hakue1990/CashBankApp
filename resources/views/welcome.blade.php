@@ -65,7 +65,14 @@
 
 </section>
 
-
+<footer>
+      <h2>{{ __('syslang.Call now! 876 582 391') }}</h2>
+      <a href="http://127.0.0.1:8000/contact" class='chat-ico'>
+        <div class="chatIco">
+          <img src="/assets/chatIco.png" alt="ico" />
+        </div>
+      </a>
+    </footer>
     </body>
     <script type="text/javascript">
 

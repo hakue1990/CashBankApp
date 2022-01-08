@@ -3,7 +3,9 @@
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loans.css') }}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<body>
     <nav>
         <div class="logo" onclick="location.href='/';"> 
         <img src="/assets/logo.png" alt=""></div>
@@ -47,15 +49,12 @@
     <!-- Contact Form -->
     <main>
       <section class="section__loan">
-        <h1>Pożyczka Gotówkowa</h1>
-        <h3>Pożycz tyle pieniędzy, ile potrzebujesz!
+        <h1>{{ __('syslang.Cash loan') }}</h1>
+        <h3>{{ __('syslang.Borrow as much money as you need!') }}
 
 </h3>
         <p>
-       <b>  Wypełnij wniosek online</b>, szybka decyzja
-
-Aby złożyć wniosek musisz podać swoje dane osobowe oraz posiadać rachunek bankowy
-Informacje o pożyczce są zawsze dostępne onlineOtrzymasz od nas przypomnienie o zbliżającym się terminie płatności i to Ty zdecydujesz o tym czy przedłużyć termin spłaty czy też spłacić całość.
+       <b> {{ __('syslang.Complete the online application,') }}</b> {{ __('syslang.quick decision To submit the application, you must provide your personal data and have a bank account. Information about the loan is always available online. You will receive a reminder from us about the upcoming payment date and you will decide whether to extend the repayment date or pay off the whole.') }}
         </p>
         <div class="images-box">
             <div class="image-box">
@@ -71,11 +70,11 @@ Informacje o pożyczce są zawsze dostępne onlineOtrzymasz od nas przypomnienie
       </section>
       <main>
         <section class="section__loan">
-          <h1>Kredyt hipoteczny!</h1>
+          <h1>{{ __('syslang.Mortgage!') }}</h1>
           <p>
-         <b> Minimalnym wymagany poziom wkładu własnego</b>
-          wynosi obecnie <b>2%</b> wartości nieruchomości. Kredytobiorcy musieliby zaangażować 45 tys. zł własnych oszczędności, a kwota kredytu w takim scenariuszu wynosi 405 tys. zł. CashBank NIE będzue wymagać  wyższej wpłaty i posiada  w ofercie kredyty z śmiesznie niskim wkładem. <br>
-          Skontaktuj się z nami - załatwisz wszystko bez zbędnych formalności!
+         <b> {{ __('syslang.The minimum required level of own contribution') }}</b>
+         {{ __('syslang.currently amounts to 2% of the property value. Borrowers would have to engage 45 thousand. PLN own savings, and the loan amount in this scenario is 405 thousand. zloty. CashBank will NOT require a higher deposit and offers loans with a ridiculously low deposit.
+    Contact us - you will arrange everything without unnecessary formalities!') }}
           </p>
           <div class="images-box">
             <div class="image-box">
@@ -87,14 +86,12 @@ Informacje o pożyczce są zawsze dostępne onlineOtrzymasz od nas przypomnienie
          
         </section>
         <section class="section__loan">
-          <h1>Karta kredytowa</h1>
+          <h1>{{ __('syslang.Credit card') }}</h1>
           <p>
-          <b> Karta  z 20 000 zł w prezencie</b>
-          - na start - zupełnie za darmo!
-            <b>Ty też możesz ją mieć!</b> <br> <br>
-            Kartą kredytową wygodnie płacisz za zakupy w sklepach w Polsce i za granicą oraz w internecie. 
-nie zapłacisz ani grosza odsetek od transakcji bezgotówkowych. Zrób zakupy dziś, zapłać kartą. 
-To tylko kilka korzyści, które przyniesie ci karta kredytowa w Cashbank!
+          <b>{{ __('syslang.A gift card with PLN 20,000 as a gift') }}</b>
+          {{ __('syslang.- to start - absolutely free!') }}
+            <b>{{ __('syslang.You can have it too!') }}</b> <br> <br>
+            {{ __('syslang.You can conveniently pay with a credit card for purchases in stores in Poland and abroad, and on the Internet. you will not pay a single cent of interest on non-cash transactions. Do shopping today, pay by card. These are just a few of the benefits of the Cashbank credit card!') }}
           </p>
           <div class="images-box">
             <div class="image-box">
@@ -107,10 +104,23 @@ To tylko kilka korzyści, które przyniesie ci karta kredytowa w Cashbank!
         </section>
     </main>
     <footer>
-      <h2>Zadzwoń teraz 876 582 391</h2>
+    <h2>{{ __('syslang.Call now! 876 582 391') }}</h2>
       <a href="http://127.0.0.1:8000/contact" class='chat-ico'>
         <div class="chatIco">
           <img src="/assets/chatIco.png" alt="ico" />
         </div>
       </a>
     </footer>
+</body>
+    <script type="text/javascript">
+
+        var url = "{{ route('changeLang') }}";
+
+        $(".changeLang").change(function(){
+            window.location.href = url + "?lang="+ $(this).val();
+        });
+
+        console.log('skrypt języka');
+
+    </script>
+</html>

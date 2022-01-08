@@ -72,13 +72,9 @@
 <!-- Contact Form -->
     <main>
       <section class="section__loan">
-        <h1>Potrzebujesz pożyczki?</h1>
+        <h1>{{ __('syslang.Do you need a loan?') }}</h1>
         <p>
-        Wybór najlepszej oferty pożyczki gotówkowej może być trudny, szczególnie jeśli decyzja o pożyczce jest podyktowana nagłą potrzebą. W takiej sytuacji pośpiech jest złym doradcą, dlatego zapoznaj się dokładnie z dostępnymi ofertami i wybierz najkorzystniejszą opcję.
-
-        procentowanie to odsetki od pożyczonej kwoty, które będziesz spłacać przez cały okres spłaty, a prowizja to jednorazowa opłata za udzielenie pożyczki. W zależności od oferty, prowizję zapłacisz w dniu otrzymania umowy lub rozłożysz ją na raty.
-Pamiętaj, żeby porównać oferty co najmniej kilku banków. Przydatnym narzędziem są kalkulatory pożyczkowe, które banki udostępniają na swoich stronach. Po wpisaniu kwoty, którą potrzebujesz, zobaczysz jaka będzie wysokość raty i prowizji.
-Warto również zapoznać się z promocjami. Banki czasami oferują pożyczki bez prowizji lub z obniżonym oprocentowaniem w ramach ofert specjalnych, np. z okazji wyprzedaży poświątecznych.</p>
+        {{ __('syslang.Choosing the best cash loan offer can be difficult, especially if the loan decision is dictated by a sudden need. In such a situation, rush is a bad advisor, so read carefully the available offers and choose the most advantageous option. interest is interest on the borrowed amount that you will pay back throughout the repayment period, and the commission is a one-time fee for granting the loan. Depending on the offer, you will pay the commission on the day of receiving the contract or divide it into installments. Remember to compare the offers of at least several banks. A useful tool are loan calculators that banks provide on their websites. After entering the amount you need, you will see what the installment and commission will be. It is also worth getting acquainted with the promotions. Banks sometimes offer commission-free or reduced-interest loans as part of special offers, such as after-holiday sales.') }}</p>
         <div class="images-box">
             <div class="image-box">
                 <img src="/assets/img/loan1.jpg" alt="loan1">
@@ -92,17 +88,9 @@ Warto również zapoznać się z promocjami. Banki czasami oferują pożyczki be
           </div>
       </section>
         <section class="section__loan">
-          <h1>Nawet do 500 000 PLN
-            wystarczy dowód osobisty!</h1>
+          <h1>{{ __('syslang.Even up to PLN 500,000, an ID card is enough!') }}</h1>
           <p>
-          Czy znasz ten koszmar: konieczność przygotowania dokumentu o zatrudnieniu, zaświadczenie o dochodach, dowód osobisty, drugi dokument tożsamości, inne dokumenty wymagane przez banki?
-
-        Stop!
-        U nas tego nie ma!
-        CashBank to  pożyczki ratalne na dowód. Pożyczasz pieniądze: szybko, łatwo i bez stresu.
-        Szanujemy Twój czas!
-
-Wzięcie pożyczki jeszcze nigdy nie było takie proste. W Aasa wystarczy tylko dowód osobisty, aby przejść proces weryfikacyjny. Nasza dewiza to minimum formalności i maksimum zadowolenia klienta. Doskonale wiemy, jak cenny jest Twój czas, dlatego go szanujemy.
+          {{ __('syslang.Do you know this nightmare: the need to prepare an employment document, income certificate, ID card, second identity document, other documents required by banks? Stop! We do not have it! CashBank are installment loans as proof. You borrow money: fast, easy and stress-free. We respect your time! Taking out a loan has never been so easy. At Aasa, you only need an ID card to undergo the verification process. Our motto is minimum formalities and maximum customer satisfaction. We perfectly know how valuable your time is, which is why we respect it.') }}
           </p>
           <div class="images-box">
             <div class="image-box">
@@ -115,7 +103,7 @@ Wzięcie pożyczki jeszcze nigdy nie było takie proste. W Aasa wystarczy tylko 
         </section>
     </main>
     <footer>
-      <h2>Zadzwoń teraz 876 582 391</h2>
+      <h2>{{ __('syslang.Call now! 876 582 391') }}</h2>
       <a href="http://127.0.0.1:8000/contact" class='chat-ico'>
         <div class="chatIco">
           <img src="/assets/chatIco.png" alt="ico" />

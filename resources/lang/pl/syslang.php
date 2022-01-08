@@ -50,6 +50,30 @@ return [
     'Number of recipient account' => 'Numer rachunku odbiorcy',
     'Transaction title' => 'Tytuł',
     'Make transaction done' => 'Wykonaj',
+    'Make transaction done' => 'Do',
+    'Cash loan' => 'Pożyczka Gotówkowa',
+    'Borrow as much money as you need!' => 'Pożycz tyle pieniędzy, ile potrzebujesz!',
+    'Cash loan' => 'Cash loan',
+    'Complete the online application,' => 'Wypełnij wniosek online,',
+    'quick decision To submit the application, you must provide your personal data and have a bank account. Information about the loan is always available online. You will receive a reminder from us about the upcoming payment date and you will decide whether to extend the repayment date or pay off the whole.' => 'szybka decyzja Aby złożyć wniosek musisz podać swoje dane osobowe oraz posiadać rachunek bankowy Informacje o pożyczce są zawsze dostępne onlineOtrzymasz od nas przypomnienie o zbliżającym się terminie płatności i to Ty zdecydujesz o tym czy przedłużyć termin spłaty czy też spłacić całość. ',
+    'Mortgage!' => 'Kredyt hipoteczny!',
+    'The minimum required level of own contribution' => 'Minimalnym wymagany poziom wkładu własnego ',
+    'currently amounts to 2% of the property value. Borrowers would have to engage 45 thousand. PLN own savings, and the loan amount in this scenario is 405 thousand. zloty. CashBank will NOT require a higher deposit and offers loans with a ridiculously low deposit.
+    Contact us - you will arrange everything without unnecessary formalities!' => 'wynosi obecnie 2% wartości nieruchomości. Kredytobiorcy musieliby zaangażować 45 tys. zł własnych oszczędności, a kwota kredytu w takim scenariuszu wynosi 405 tys. zł. CashBank NIE będzue wymagać wyższej wpłaty i posiada w ofercie kredyty z śmiesznie niskim wkładem.
+    Skontaktuj się z nami - załatwisz wszystko bez zbędnych formalności! ',
+    'Credit card' => 'Karta kredytowa',
+    'A gift card with PLN 20,000 as a gift' => 'Karta z 20 000 zł w prezencie',
+    '- to start - absolutely free!' => ' - na start - zupełnie za darmo!',
+    'You can have it too!' => 'Ty też możesz ją mieć!',
+    'You can conveniently pay with a credit card for purchases in stores in Poland and abroad, and on the Internet. you will not pay a single cent of interest on non-cash transactions. Do shopping today, pay by card. These are just a few of the benefits of the Cashbank credit card!' => 'Kartą kredytową wygodnie płacisz za zakupy w sklepach w Polsce i za granicą oraz w internecie. nie zapłacisz ani grosza odsetek od transakcji bezgotówkowych. Zrób zakupy dziś, zapłać kartą. To tylko kilka korzyści, które przyniesie ci karta kredytowa w Cashbank! ',
+    'Do you need a loan?' => 'Potrzebujesz pożyczki?',
+    'Choosing the best cash loan offer can be difficult, especially if the loan decision is dictated by a sudden need. In such a situation, rush is a bad advisor, so read carefully the available offers and choose the most advantageous option. interest is interest on the borrowed amount that you will pay back throughout the repayment period, and the commission is a one-time fee for granting the loan. Depending on the offer, you will pay the commission on the day of receiving the contract or divide it into installments. Remember to compare the offers of at least several banks. A useful tool are loan calculators that banks provide on their websites. After entering the amount you need, you will see what the installment and commission will be. It is also worth getting acquainted with the promotions. Banks sometimes offer commission-free or reduced-interest loans as part of special offers, such as after-holiday sales.' => 'Wybór najlepszej oferty pożyczki gotówkowej może być trudny, szczególnie jeśli decyzja o pożyczce jest podyktowana nagłą potrzebą. W takiej sytuacji pośpiech jest złym doradcą, dlatego zapoznaj się dokładnie z dostępnymi ofertami i wybierz najkorzystniejszą opcję. procentowanie to odsetki od pożyczonej kwoty, które będziesz spłacać przez cały okres spłaty, a prowizja to jednorazowa opłata za udzielenie pożyczki. W zależności od oferty, prowizję zapłacisz w dniu otrzymania umowy lub rozłożysz ją na raty. Pamiętaj, żeby porównać oferty co najmniej kilku banków. Przydatnym narzędziem są kalkulatory pożyczkowe, które banki udostępniają na swoich stronach. Po wpisaniu kwoty, którą potrzebujesz, zobaczysz jaka będzie wysokość raty i prowizji. Warto również zapoznać się z promocjami. Banki czasami oferują pożyczki bez prowizji lub z obniżonym oprocentowaniem w ramach ofert specjalnych, np. z okazji wyprzedaży poświątecznych.',
+    'Even up to PLN 500,000, an ID card is enough!' => 'Nawet do 500 000 PLN wystarczy dowód osobisty!',
+    'Do you know this nightmare: the need to prepare an employment document, income certificate, ID card, second identity document, other documents required by banks? Stop! We do not have it! CashBank are installment loans as proof. You borrow money: fast, easy and stress-free. We respect your time! Taking out a loan has never been so easy. At Aasa, you only need an ID card to undergo the verification process. Our motto is minimum formalities and maximum customer satisfaction. We perfectly know how valuable your time is, which is why we respect it.' => 'Czy znasz ten koszmar: konieczność przygotowania dokumentu o zatrudnieniu, zaświadczenie o dochodach, dowód osobisty, drugi dokument tożsamości, inne dokumenty wymagane przez banki? Stop! U nas tego nie ma! CashBank to pożyczki ratalne na dowód. Pożyczasz pieniądze: szybko, łatwo i bez stresu. Szanujemy Twój czas! Wzięcie pożyczki jeszcze nigdy nie było takie proste. W Aasa wystarczy tylko dowód osobisty, aby przejść proces weryfikacyjny. Nasza dewiza to minimum formalności i maksimum zadowolenia klienta. Doskonale wiemy, jak cenny jest Twój czas, dlatego go szanujemy. ',
+    'Call now! 876 582 391' => 'Zadzwoń teraz 876 582 391',
+
+
+  
 
 ];
 ?>
