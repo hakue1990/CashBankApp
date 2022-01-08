@@ -40,5 +40,15 @@ return [
     'dashboard-interest' => 'Interest: ',
     'dashboard-amountofinstallment' => 'The amount of the next installment: ',
     'dashboard-numberofinstallment' => 'Number of installments to be repaid: ',
+    'Top up for phone' => 'Top up for phone',
+    'Top up for phone amount' => 'Amount',
+    'Top up for phone title' => 'Title',
+    'Top up for phone phone number' => 'Phone number',
+    'Top up for phone transaction' => 'Top up',
+    'Make transaction' => 'Make transaction',
+    'Make transaction amount' => 'Amount',
+    'Number of recipient account' => 'Number of recipient account',
+    'Transaction title' => 'Title',
+    'Make transaction done' => 'Do',
 ];
 ?>

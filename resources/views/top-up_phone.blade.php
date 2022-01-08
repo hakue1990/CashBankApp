@@ -12,7 +12,7 @@
 <div class="create-container">
     
     <form action="{{ route('transactions.store') }}" method="POST" class="register-form">
-        <h2>Doładuj telefon</h2>
+        <h2>{{ __('syslang.Top up for phone') }}</h2>
         @if ($message = Session::get('error'))
         <h3>{{ $message }}</h2>
         @endif
@@ -25,7 +25,7 @@
             <input id="amount" type="number" name="amount" step="0.01" required>
             <label for="amount" class="label-name">
                 <span class="content-name">
-                Kwota
+                {{ __('syslang.Top up for phone amount') }}
                 </span>
         </label>
     </div>
@@ -34,7 +34,7 @@
         <input id="title" type="text" name="title" required>
         <label for="title" class="label-name">  
             <span class="content-name">
-                Tytuł
+            {{ __('syslang.Top up for phone title') }}
             </span>
         </label>
     </div>
@@ -44,13 +44,13 @@
         <input id="phone_number" type="text" name="phone_number" required>
         <label for="phone_number" class="label-name">
             <span class="content-name">
-                Numer telefonu
+            {{ __('syslang.Top up for phone phone number') }}
             </span>
         </label>
     </div>
 
 
-        <button class="form--button" type="submit">Dodaj transakcje</button>
+        <button class="form--button" type="submit">{{ __('syslang.Top up for phone transaction') }}</button>
     </form>
 </div>
     

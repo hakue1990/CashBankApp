@@ -124,13 +124,13 @@
             accountType.textContent = x();
 
             if(acconuts[counter]['interest'] !== null) {
-                accountintrests.textContent = {!! json_encode( __('syslang.dashboard-interest'), JSON_HEX_TAG) !!} + acconuts[counter]['interest'];
+                accountintrests.textContent = {!! json_encode( __('syslang.dashboard-interest'), JSON_HEX_TAG) !!} + acconuts[counter]['interest'] + " %";
             } else {
                 accountintrests.textContent = "";
             }
 
             if(acconuts[counter]['amount_of_installment'] !== null) {
-                accountAmountOfInstallment.textContent = {!! json_encode( __('syslang.dashboard-amountofinstallment'), JSON_HEX_TAG) !!} + acconuts[counter]['amount_of_installment'];
+                accountAmountOfInstallment.textContent = {!! json_encode( __('syslang.dashboard-amountofinstallment'), JSON_HEX_TAG) !!} + acconuts[counter]['amount_of_installment'] + " PLN";
             } else {
                 accountAmountOfInstallment.textContent = "";
             }

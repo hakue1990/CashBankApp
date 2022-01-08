@@ -11,7 +11,7 @@
 
 <div class="create-container">
 <form action="{{ route('transactions.store') }}" method="POST" class="register-form">
-        <h2>Wykonaj przelew</h2>
+        <h2>{{ __('syslang.Make transaction') }}</h2>
         @if (isset($error))
             <h3>{{ $error }}</h2>
         @endif
@@ -24,7 +24,7 @@
         <input id="amount" type="number" name="amount" step="0.01" required>
         <label for="amount" class="label-name">  
             <span class="content-name">
-                Kwota
+            {{ __('syslang.Make transaction amount') }}
             </span>
         </label>
     </div>
@@ -33,7 +33,7 @@
         <input id="recipient" type="text" name="recipient" required>
         <label for="recipient" class="label-name">  
             <span class="content-name">
-                Numer rachunku odbiorcy
+            {{ __('syslang.Number of recipient account') }}
             </span>
         </label>
     </div>
@@ -42,11 +42,11 @@
         <input id="title" type="text" name="title" required>
         <label for="title" class="label-name">  
             <span class="content-name">
-                Tytuł
+            {{ __('syslang.Transaction title') }}
             </span>
         </label>
     </div>
 
-    <button type="submit" class="form--button">Wykonaj przelew</button>
+    <button type="submit" class="form--button">{{ __('syslang.Make transaction done') }}</button>
 </form>
 </div>

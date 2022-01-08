@@ -40,6 +40,16 @@ return [
     'dashboard-interest' => 'Oprocentowanie: ',
     'dashboard-amountofinstallment' => 'Kwota następnej raty: ',
     'dashboard-numberofinstallment' => 'Ilość rat do spłaty: ',
+    'Top up for phone' => 'Doładuj telefon',
+    'Top up for phone amount' => 'Kwota',
+    'Top up for phone title' => 'Tytuł',
+    'Top up for phone phone number' => 'Numer telefonu',
+    'Top up for phone transaction' => 'Doładuj',
+    'Make transaction' => 'Wykonaj przelew',
+    'Make transaction amount' => 'Kwota',
+    'Number of recipient account' => 'Numer rachunku odbiorcy',
+    'Transaction title' => 'Tytuł',
+    'Make transaction done' => 'Wykonaj',
 
 ];
 ?>
