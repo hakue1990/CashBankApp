@@ -6,7 +6,7 @@
         <div class="dashboard-account">
             <div class="dashboard-account-left">
                 <h2 id="account-type"></h2>
-                <h3 id="account-number"></h3> <!-- {{ $accounts[0]['account_number']}} -->
+                <h3 id="account-number"></h3>
             </div>
             <div class="dashboard-account-middle">
                 <p id="account-intrests"></p>
@@ -15,7 +15,7 @@
             </div>
             <div class="dashboard-account-right">
                 <h3>{{ __('syslang.dashboard-available-funds') }}</h3>
-                <h2 id="account-balance"></h2>  <!-- {{ $accounts[0]['balance'] }} PLN -->
+                <h2 id="account-balance"></h2>
             </div>
         </div>
 
