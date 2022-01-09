@@ -74,7 +74,8 @@ return [
     'subject' => 'subject',
     'name' => 'name',
     'text' => 'text',
-    'select language' => 'select language'
+    'select language' => 'select language',
+    'CashBank Login' => 'CashBank Login'
 
 
 

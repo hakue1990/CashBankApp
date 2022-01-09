@@ -24,7 +24,7 @@
 
      <div class="language">
         <div class="col-md-2 col-md-offset-6 text-right">
-            <strong class="language-text">Select Language: </strong>
+            <strong class="language-text">{{ __('syslang.select language') }} </strong>
         </div>
         <div class="col-md-4">
 

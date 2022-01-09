@@ -4,7 +4,7 @@
     
            
                     <form method="POST" action="{{ route('login') }}" class='form-login'>
-                        <h2>CashBank Logowanie</h2>
+                        <h2> {{ __('syslang.CashBank Login') }}</h2>
                         @csrf
                                 <div class="form--box">
                                 <input  id="email" type="text" name="email"  autocomplete='off' required>

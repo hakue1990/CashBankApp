@@ -75,7 +75,8 @@ return [
     'subject' => 'temat',
     'name' => 'imie',
     'text' => 'wiadomość',
-    'select language' => 'wybierz język'
+    'select language' => 'wybierz język',
+    'CashBank Login' => 'CashBank Logowanie'
 
 
   
