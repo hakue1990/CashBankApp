@@ -33,8 +33,8 @@
         <div class="dashboard-history-container" id="dashboard-history-container">
             <div class="dashboard-history-header">
                 <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-historytransactions') }}</h5>
+                <h5 class="dashboard-history-header-h">{{  __('syslang.dashboard-history-category') }}</h5>
                 <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-title') }}</h5>
-                <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-category') }}</h5>
                 <h5 class="dashboard-history-header-h">{{ __('syslang.dashboard-history-amount') }}</h5>
             </div>
             @if ($message = Session::get('success'))
